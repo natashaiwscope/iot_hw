@@ -76,18 +76,23 @@ message ("Host = " $${QMAKE_HOST.arch})
 
 unix {
 contains(QMAKE_HOST.arch, x86_64):{
-    LIBS        += -L../../lib/linux64/udplib -ludp
+    LIBS        += -L../../lib/linux64 -ludp
 }
 
 contains(QMAKE_HOST.arch, i686):{
-    LIBS        += -L../../lib/linux32/udplib -ludp
+    LIBS        += -L../../lib/linux32 -ludp
 }
 
 contains(QMAKE_HOST.arch, arm):{
-    LIBS        += -L../../lib/arm/udplib -ludp
+    LIBS        += -L../../lib/arm -ludp
 }
 
 }
+
+win32 {
+    LIBS        += -L../../lib/win32 -ludp
+}
+
 
 unix {
     DEFINES += LINUX_WAY
