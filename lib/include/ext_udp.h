@@ -1,5 +1,6 @@
 #ifndef __EXTERNAL_UDP_H
 #define __EXTERNAL_UDP_H
+// VERSION 2.1
 
 #include <qapplication.h>
 #include <QtGui>
