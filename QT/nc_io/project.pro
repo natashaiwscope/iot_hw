@@ -131,10 +131,31 @@ QMAKE_EXTRA_TARGETS += Ext_Lib
 
 QMAKE_CXXFLAGS_RELEASE  = -O0
 
-#HEADERS      += cli_cmds.h
-#SOURCES      += cli_cmds.c
 
-#INCLUDEPATH += ../../../common/cli
+message ("Host = " $${QMAKE_HOST.arch})
 
-#HEADERS += ../../../common/cli/cli.h
-#SOURCES += ../../../common/cli/cli.cpp
+unix {
+contains(QMAKE_HOST.arch, x86_64):{
+    LIBS        += -L../../lib/linux64 -ludp
+}
+
+contains(QMAKE_HOST.arch, i686):{
+    LIBS        += -L../../lib/linux32 -ludp
+}
+
+contains(QMAKE_HOST.arch, arm):{
+    LIBS        += -L../../lib/arm -ludp
+}
+
+}
+
+win32 {
+    LIBS        += -L../../lib/win32 -ludp
+}
+
+
+unix {
+    DEFINES += LINUX_WAY
+}
+
+
