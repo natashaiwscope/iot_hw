@@ -50,7 +50,7 @@ unix {
 
 
 
-INCLUDEPATH  += ../../udplib
+INCLUDEPATH  += ../../lib/include
 LIBS         += -lm
 
 unix {
@@ -69,29 +69,24 @@ LIBS += -L$${QWT_LOCATION}/lib -lqwt
 
 
 INCLUDEPATH += ../../lib/include
-INCLUDEPATH += ../../../../../git/emulator_v0/lib/include
-LIBS        += -L../../udplib/bin -ludp
 
 QMAKE_CXXFLAGS_RELEASE  = -O0
 
 message ("Host = " $${QMAKE_HOST.arch})
 
-
-message ("Host = " $${QMAKE_HOST.arch})
-
 unix {
 contains(QMAKE_HOST.arch, x86_64):{
-    LIBS        += -L../../udplib/linux64 -ludp
+    LIBS        += -L../../lib/linux64/udplib -ludp
 }
 
 contains(QMAKE_HOST.arch, i686):{
-    LIBS        += -L../../udplib/linux32 -ludp
-}
+    LIBS        += -L../../lib/linux32/udplib -ludp
 }
 
-win32 {
-    LIBS        += -L../../udplib/win32 -ludp
-#   QMAKE_POST_LINK += "copy ..\..\lib\win32\*.* bin  /y /q"
+contains(QMAKE_HOST.arch, arm):{
+    LIBS        += -L../../lib/arm/udplib -ludp
+}
+
 }
 
 unix {
