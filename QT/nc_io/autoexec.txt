@@ -1,0 +1,82 @@
+/*
+typedef enum
+{
+    TERM_UART2=0,
+    TERM_UART3=1,
+    TERM_RS485=2,
+    TERM_FILE=3,
+    TERM_COAP_SCRATCH=4,
+} DbgPrnOutput_t;
+
+typedef enum
+{
+    IW_PLAIN_TEXT=0,
+    IW_HEX_DUMP,
+    IW_HEX_DUMP_WITH_0x,
+    IW_LED,
+    IW_STATUS,
+    IW_BANNER,
+    IW_GRAPH,
+} enInfoType;
+
+typedef enum
+{
+    IW_WHITE=0,
+    IW_BLACK,
+    IW_RED,
+    IW_DARKRED,
+    IW_GREEN,
+    IW_DARKGREEN,
+    IW_BLUE,
+    IW_DARKBLUE,
+    IW_CYAN,
+    IW_DARKCYAN,
+    IW_MAGENTA,
+    IW_DARKMAGENTA,
+    IW_YELLOW,
+    IW_DARKYELLOW,
+    IW_GRAY,
+    IW_DARKGRAY,
+    IW_LIGHTGRAY,
+    IW_TRANSPARENT
+} enTextColor;
+
+typedef enum
+{
+    IW_SMALL=0,
+    IW_NORMAL,
+    IW_BOLD,
+    IW_LARGE
+} enTextFont;
+
+typedef enum
+{
+    IW_CLEAR_SCREEN=0,
+    IW_APPEND_TEXT,
+} enWinCmd;
+
+typedef enum
+{
+    IW_SCRATCH1=0,
+    IW_SCRATCH2,
+    IW_SCRATCH3,
+    IW_RS485,
+    IW_UART2,
+    IW_UART3,
+    IW_UART23,
+} enTargetWin;
+
+typedef enum
+{
+    IW_GRAPH1,
+    IW_GRAPH2,
+    IW_GRAPH3,
+    IW_LED1,
+    IW_LED2,
+    IW_LED3
+} enTargetDev;
+
+int postString(enTextColor,enTextFont);
+int setColFont(enTargetWin,enInfoType,enWinCmd,char *,unsigned short len);
+
+*/

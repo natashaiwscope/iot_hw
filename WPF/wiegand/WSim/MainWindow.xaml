@@ -1,0 +1,43 @@
+﻿<Window x:Class="WSim.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WSim"
+        mc:Ignorable="d"
+        Title="WGNWIN" Height="500" Width="725">
+    <Grid Margin="0,0,0.4,-0.2">
+        <Button x:Name="scanSingleRaw" Content="Scan RAW Card" HorizontalAlignment="Left" Margin="0,180,0,0" VerticalAlignment="Top" Width="140" Height="39" FontWeight="Bold" Click="scanSingleRaw_Click"/>
+        <TextBox x:Name="cardNum" HorizontalAlignment="Left" Height="39" Margin="317,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" FontSize="20" FontWeight="Bold"/>
+        <TextBox x:Name="facCode" HorizontalAlignment="Left" Height="39" Margin="160,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="RUN_CSV_FILE" Content="Start &quot;C&quot; File" HorizontalAlignment="Left" Margin="0,382,0,0" VerticalAlignment="Top" Width="140" Height="39" FontWeight="Bold"/>
+        <TextBox x:Name="csvFile" HorizontalAlignment="Left" Height="39" Margin="154,330,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="543" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="browseCSVFile" Content="Browse CSV File" HorizontalAlignment="Left" Margin="0,330,0,0" VerticalAlignment="Top" Width="140" Height="39" FontWeight="Bold"/>
+        <TextBox IsReadOnly="True" x:Name="result" HorizontalAlignment="Left" Height="39" Margin="317,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="161" FontSize="20" FontWeight="Bold"/>
+        <TextBox IsReadOnly="True" x:Name="time" HorizontalAlignment="Left" Height="39" Margin="160,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="label" Content="TIME/Result" HorizontalAlignment="Left" Margin="6,107,0,0" VerticalAlignment="Top" FontSize="20" Width="140" FontWeight="Bold"/>
+
+        <Label x:Name="version" Content="HARDWARE/SOFTWARE VERSION" HorizontalAlignment="Left" Margin="241,38,0,0" VerticalAlignment="Top" FontSize="20" Width="367" FontWeight="Bold"/>
+        <Button x:Name="Start" Content="Connect" HorizontalAlignment="Left" Margin="10,51,0,0" VerticalAlignment="Top" Width="111" Height="39" Click="Start_Click" FontWeight="Bold"/>
+
+        <Label x:Name="connLED" Content="" Foreground="Green" Background="Red" HorizontalAlignment="Left" Margin="29,0,0,0" VerticalAlignment="Top" Height="18" Width="6" MouseLeftButtonDown="connLED_MouseLeftButtonDown"/>
+        <Label x:Name="l1" Content="" Foreground="Green" Background="Red" HorizontalAlignment="Left" Margin="514,0,0,0" VerticalAlignment="Top" Height="18" Width="6"/>
+        <Label x:Name="l2" Content="" Foreground="Green" Background="Red" HorizontalAlignment="Left" Margin="525,0,0,0" VerticalAlignment="Top" Height="18" Width="6"/>
+        <Label x:Name="l3" Content="" Foreground="Green" Background="Red" HorizontalAlignment="Left" Margin="536,0,0,0" VerticalAlignment="Top" Height="18" Width="6"/>
+        <Label x:Name="l4" Content="" Foreground="Green" Background="Red" HorizontalAlignment="Left" Margin="547,0,0,0" VerticalAlignment="Top" Height="18" Width="6"/>
+        <Label x:Name="l5" Content="" Foreground="Green" Background="Red" HorizontalAlignment="Left" Margin="558,0,0,0" VerticalAlignment="Top" Height="18" Width="6"/>
+        <Label x:Name="l6" Content="" Foreground="Green" Background="Red" HorizontalAlignment="Left" Margin="569,0,0,0" VerticalAlignment="Top" Height="18" Width="6"/>
+        <Label x:Name="l7" Content="" Foreground="Green" Background="Red" HorizontalAlignment="Left" Margin="580,0,0,0" VerticalAlignment="Top" Height="18" Width="6"/>
+        <Label x:Name="l8" Content="" Foreground="Green" Background="Red" HorizontalAlignment="Left" Margin="591,0,0,0" VerticalAlignment="Top" Height="18" Width="6"/>
+        <Label x:Name="l9" Content="" Foreground="Green" Background="Red" HorizontalAlignment="Left" Margin="602,0,0,0" VerticalAlignment="Top" Height="18" Width="6" RenderTransformOrigin="0.5,0.5">
+        </Label>
+        <ComboBox x:Name="ipAddrBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="253" Margin="70,0,0,0" Height="28" FontSize="20" DropDownClosed="ipAddrBox_DropDownClosed" DropDownOpened="ipAddrBox_DropDownOpened"/>
+        <TextBox IsReadOnly="True" x:Name="statusLine" HorizontalAlignment="Left" Height="38" Margin="0,431,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="697" FontSize="20" FontWeight="Bold"/>
+        <TextBox x:Name="cFile" HorizontalAlignment="Left" Height="39" Margin="154,382,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="543" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="greenLED" Content="" Foreground="Green" Background="Gray" HorizontalAlignment="Left" Margin="497,106,0,0" VerticalAlignment="Top" Height="24" Width="56" MouseLeftButtonDown="connLED_MouseLeftButtonDown"/>
+        <Label x:Name="redLED" Content="" Foreground="Green" Background="Gray" HorizontalAlignment="Left" Margin="569,105,0,0" VerticalAlignment="Top" Height="24" Width="56" MouseLeftButtonDown="connLED_MouseLeftButtonDown"/>
+        <Label x:Name="timeoutLED" Content="" Foreground="Green" Background="Gray" HorizontalAlignment="Left" Margin="641,106,0,0" VerticalAlignment="Top" Height="24" Width="56" MouseLeftButtonDown="connLED_MouseLeftButtonDown" RenderTransformOrigin="1.69,0.57"/>
+        <Button x:Name="scanWiegand" Content="ScanWiegand" HorizontalAlignment="Left" Margin="0,264,0,0" VerticalAlignment="Top" Width="140" Height="39" Click="scanSingle1_Click" FontWeight="Bold"/>
+        <TextBox x:Name="cardNumRAW" HorizontalAlignment="Left" Height="39" Margin="317,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" FontSize="20" FontWeight="Bold"/>
+    </Grid>
+</Window>

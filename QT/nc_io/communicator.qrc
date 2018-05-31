@@ -1,0 +1,21 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file>images/new.png</file>
+    <file>images/print.png</file>
+    <file>images/save.png</file>
+    <file>images/undo.png</file>
+    <file>images/rtc.png</file>
+    <file>images/go.png</file>
+    <file>images/floppy.png</file>
+    <file>images/format.png</file>
+    <file>images/reboot.png</file>
+    <file>images/ledoff.png</file>
+    <file>images/ledon.png</file>
+    <file>images/check.png</file>
+    <file>images/ledg.png</file>
+    <file>images/ledr.png</file>
+    <file>images/led_sync.png</file>
+    <file>images/ledy.png</file>
+    <file>images/fwupdate.png</file>
+</qresource>
+</RCC>
