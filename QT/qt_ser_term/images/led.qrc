@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/" >
+        <file>ledoff.png</file>
+        <file>ledon.png</file>
+        <file>check.png</file>
+        <file>ledg.png</file>
+        <file>ledr.png</file>
+        <file>led_sync.png</file>
+        <file>ledy.png</file>
+    </qresource>
+</RCC>
