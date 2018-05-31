@@ -58,9 +58,7 @@ public:
     ioTxtGrpthExchStrct  iGuiUpdate;
 
     CodeEditor   *editor;
-    Console     *cConsole3;
-    Console     *cConsole2;
-    Console     *cConsole1;
+    Console     *cConsole;
     bool        boolSelectReady;
 
     Ui::HeartBeat      *ui;
