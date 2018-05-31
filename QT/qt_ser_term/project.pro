@@ -111,9 +111,20 @@ contains(QMAKE_HOST.arch, x86_64):{
 contains(QMAKE_HOST.arch, i686):{
     LIBS        += -L../../lib/linux32 -ludp
 }
+
+contains(QMAKE_HOST.arch, arm):{
+    LIBS        += -L../../lib/arm -ludp
+}
+
 }
 
 win32 {
     LIBS        += -L../../lib/win32 -ludp
-#   QMAKE_POST_LINK += "copy ..\..\lib\win32\*.* bin  /y /q"
 }
+
+
+unix {
+    DEFINES += LINUX_WAY
+}
+
+
