@@ -86,7 +86,7 @@ FILE_PATH     = ../common
 LIBS         += -lm
 
 
-TARGET   = heartbeat
+TARGET   = nc_io
 
 CONFIG       += wwwidgets
 
