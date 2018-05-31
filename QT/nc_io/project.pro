@@ -80,7 +80,6 @@ LIBS += -L$${QWT_LOCATION}/lib -lqwt
 
 
 INCLUDEPATH  += .
-INCLUDEPATH  += ../udplib
 INCLUDEPATH  += led
 INCLUDEPATH  += ../common
 INCLUDEPATH  += ../../ext_common
@@ -90,8 +89,6 @@ INCLUDEPATH  += ../../../../git/emulator_v0/lib/include
 FILE_PATH     = ../common
 
 LIBS         += -lm
-LIBS        += -L../udplib/bin -ludp
-INCLUDEPATH += ../extudp
 
 
 TARGET   = heartbeat
@@ -110,21 +107,6 @@ DEFINES += WINDOWS_WAY
 QWT_LOCATION = C:/Qt/4.8.7/extra/qwt-6.0.2
 INCLUDEPATH += $${QWT_LOCATION}/src
 LIBS += -L$${QWT_LOCATION}/lib -lqwt
-}
-
-unix {
-PRE_TARGETDEPS       = ../udplib/bin/udp.so
-#PRE_TARGETDEPS      += ../../../common/cscript/run_cscr
-
-Ext_Lib.target     = ../udplib/bin/udp.so
-Ext_Lib.commands   = cd ../udplib && Qmake
-Ext_Lib.depends    = ../udplib/proextlib.pro
-QMAKE_EXTRA_TARGETS += Ext_Lib
-
-#run_cscr.target     =    ../../common/cscript/bin/run_cscr
-#run_cscr.commands   = cd ../../common/cscript && Qmake
-#run_cscr.depends    =    ../../common/cscript/project.pro
-#QMAKE_EXTRA_TARGETS +=   ../../common/cscript/run_cscr
 }
 
 #QMAKE_POST_LINK += "cp ../../../common/cscript/bin/run_cscr bin"
