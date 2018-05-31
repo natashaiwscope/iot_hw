@@ -79,13 +79,8 @@ LIBS += -L$${QWT_LOCATION}/lib -lqwt
 }
 
 
+INCLUDEPATH  += ../../lib/include
 INCLUDEPATH  += .
-INCLUDEPATH  += led
-INCLUDEPATH  += ../common
-INCLUDEPATH  += ../../ext_common
-INCLUDEPATH  += ../../../common/endpoints
-INCLUDEPATH  += ../../../../git/emulator_v0/lib/include
-
 FILE_PATH     = ../common
 
 LIBS         += -lm
