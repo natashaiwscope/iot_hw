@@ -1,6 +1,7 @@
 FORMS         += adio_pin.ui
 FORMS         += ci2c_io.ui
 FORMS         += rgbi2c.ui
+FORMS         += humidity.ui
 
 HEADERS      += heartbeat.h
 #HEADERS      += tftpc.h
@@ -24,6 +25,9 @@ SOURCES += ci2c_io.cpp
 HEADERS += ci2c_io.h
 SOURCES += rgbi2c.cpp
 HEADERS += rgbi2c.h
+
+SOURCES += humidity.cpp
+HEADERS += humidity.h
 
 #RP= ../../../scratch1
 RP= ../..

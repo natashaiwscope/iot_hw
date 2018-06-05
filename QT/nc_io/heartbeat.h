@@ -15,6 +15,7 @@
 #include "adio_pin.h"
 #include "ci2c_io.h"
 #include "rgbi2c.h"
+#include "humidity.h"
 
 #include "shared_struct.h"
 #include "ext_udp.h"
@@ -56,6 +57,7 @@ public:
     ADIO_PIN     *adio_PIN;
     CI2C_IO     *i2cIO;
     RGBI2C      *rgbIO;
+    HUMIDITY    *hum;
 
     unsigned char in_data[2048];
     char c_code_data[4095];

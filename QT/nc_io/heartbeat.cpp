@@ -58,6 +58,7 @@ HeartBeat::HeartBeat()
     adio_PIN    = new ADIO_PIN(this);
     i2cIO       = new CI2C_IO(this);
     rgbIO       = new RGBI2C(this);
+    hum         = new HUMIDITY(this);
 
 #ifdef LINUX_WAY
     ext_msgPump = new ExternSig();
@@ -479,6 +480,7 @@ void HeartBeat::createTabWidget()
     tabWidget->addTab(adio_PIN, tr("\"GEN IO\""));
     tabWidget->addTab(i2cIO, tr("\"I2C\""));
     tabWidget->addTab(rgbIO, tr("\"RGBI2C\""));
+    tabWidget->addTab(hum, tr("\"HUMIDITY\""));
 }
 
 void HeartBeat::comm_start()
