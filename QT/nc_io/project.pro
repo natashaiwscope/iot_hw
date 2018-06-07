@@ -61,28 +61,6 @@ INSTALLS += target sources
 
 CONFIG       += wwwidgets
 
-unix {
-    DEFINES += LINUX_WAY
-    #DEFINES += FORCE_STATIC_LIB
-    QWT_LOCATION = /usr/local/qwt-6.0.2
-    INCLUDEPATH += $${QWT_LOCATION}/include
-    INCLUDEPATH += /usr/include
-    INCLUDEPATH += /usr/include/qt4/wwWidgets
-    LIBS += -L$${QWT_LOCATION}/lib -lqwt
-    LIBS += -L$${QWT_LOCATION}/lib -lqwt
-    LIBS += -lgsl
-    LIBS += -lgslcblas
-}
-
-win32 {
-DEFINES += WINDOWS_WAY
-DEFINES += _WIN32
-QWT_LOCATION = C:/Qt/4.8.7/extra/qwt-6.0.2
-INCLUDEPATH += $${QWT_LOCATION}/src
-LIBS += -L$${QWT_LOCATION}/lib -lqwt
-}
-
-
 INCLUDEPATH  += ../../lib/include
 INCLUDEPATH  += .
 FILE_PATH     = ../common
@@ -93,22 +71,6 @@ LIBS         += -lm
 TARGET   = nc_io
 
 CONFIG       += wwwidgets
-
-unix {
-QWT_LOCATION = /usr/local/qwt-6.0.2
-DEFINES      += LINUX_WAY
-INCLUDEPATH  += $${QWT_LOCATION}/include
-LIBS += -L$${QWT_LOCATION}/lib -lqwt
-}
-
-win32 {
-DEFINES += WINDOWS_WAY
-QWT_LOCATION = C:/Qt/4.8.7/extra/qwt-6.0.2
-INCLUDEPATH += $${QWT_LOCATION}/src
-LIBS += -L$${QWT_LOCATION}/lib -lqwt
-}
-
-#QMAKE_POST_LINK += "cp ../../../common/cscript/bin/run_cscr bin"
 
 QMAKE_CXXFLAGS_RELEASE  = -O0
 
