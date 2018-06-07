@@ -556,7 +556,7 @@ void HeartBeat::FoundDataLoggerHWString(QString s)
     if (!found)
     {
         oscope_ip->addItem(s);
-        connLED->connLED->setStyleSheet("background: green");
+        connLED->setStyleSheet("background: green");
     }
 
 }
