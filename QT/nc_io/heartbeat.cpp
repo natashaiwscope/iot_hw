@@ -159,7 +159,7 @@ void HeartBeat::slot_Show_Script(bool x)
 
 void HeartBeat::connAction()
 {
-    connLED->setColor(Qt::red);
+    connLED->setStyleSheet("background: red");
     //deviceDisconnect();
 }
 
@@ -309,8 +309,9 @@ void HeartBeat::newScriptSlot()
 
 void HeartBeat::createActions()
 {
-    connLED    = new QwwLed(Qt::darkGray, QwwLed::Circular, this);
-    connLED->setMinimumSize(30, 30);
+    connLED    = new QLabel(this);
+    connLED->setMinimumSize(10, 30);
+    connLED->setStyleSheet("background: red");
 
     d_connect = new QAction(QIcon(icon_connect), "Connect", this);
     d_connect->setShortcut(tr("C-C"));
@@ -368,9 +369,10 @@ void HeartBeat::createToolBars()
 
     //editToolBar = addToolBar(tr("Edit"));
     //editToolBar->addAction(undoAct);
+    commLED    = new QLabel(this);
+    commLED->setMinimumSize(10, 30);
+    commLED->setStyleSheet("background: red");
 
-    commLED    = new QwwLed(Qt::darkGray, QwwLed::Circular, this);
-    commLED->setMinimumSize(30, 30);
     fileToolBar->addWidget(commLED);
 
 
@@ -484,12 +486,12 @@ void HeartBeat::createTabWidget()
 
 void HeartBeat::comm_start()
 {
-    commLED->setColor(Qt::red);
+    commLED->setStyleSheet("background: red");
 }
 
 void HeartBeat::comm_end()
 {
-    commLED->setColor(Qt::yellow);
+    commLED->setStyleSheet("background: yellow");
 }
 
 //! [9]
@@ -554,7 +556,7 @@ void HeartBeat::FoundDataLoggerHWString(QString s)
     if (!found)
     {
         oscope_ip->addItem(s);
-        connLED->setColor(Qt::green);
+        connLED->connLED->setStyleSheet("background: green");
     }
 
 }
@@ -690,7 +692,7 @@ void HeartBeat::slot_ReInitDevList()
     //qDebug() << "Num Devices=" << ltdev << "\r\n";
     //fflush(stdout);
 
-    if (ltdev == 0) connLED->setColor(Qt::red);
+    if (ltdev == 0) connLED->setStyleSheet("background: red");
     else
     {
         for (l = 0; l < ltdev; l++)
@@ -698,7 +700,7 @@ void HeartBeat::slot_ReInitDevList()
             memset(textbuff, '\0', sizeof(textbuff));
             ltdev = usGetConnectedDeviceIP(l, textbuff);
             oscope_ip->addItem(textbuff);
-            connLED->setColor(Qt::green);
+connLED->setStyleSheet("background: green");
         }
         sprintf(textbuff, "CNT#%d", ltdev);
         qlbl->setText(textbuff);
