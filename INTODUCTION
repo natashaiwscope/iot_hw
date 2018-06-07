@@ -1,0 +1,9 @@
+This introduction is about IOT device which can communicate
+with any device using WiFi.
+
+Writing console mode c++ application is like 5 lines of code.
+API are very simple to use where all complexity is hidden in 
+multiplatform library
+
+Here is read use case
+
