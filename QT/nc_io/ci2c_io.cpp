@@ -1,29 +1,14 @@
 #include <qmainwindow.h>
 #include <qapplication.h>
-#include <qwt_counter.h>
-#include <qwt_slider.h>
 #include <qtoolbar.h>
 #include <qlabel.h>
 #include <qlayout.h>
 #include <qmainwindow.h>
-#include <qwt_slider.h>
 #include <qcombobox.h>
-#include <qwt_analog_clock.h>
-#include <qwt_plot.h>
 #include <qevent.h>
 #if QT_VERSION < 0x040000
 #include <qwhatsthis.h>
 #endif
-#include <qwt_plot_layout.h>
-#include <qwt_plot_canvas.h>
-#include <qwt_plot_grid.h>
-#include <qwt_plot_curve.h>
-#include <qwt_symbol.h>
-#include <qwt_scale_widget.h>
-#include <qwt_wheel.h>
-#include <qwt_plot.h>
-#include <qwt_interval.h>
-#include <qwt_system_clock.h>
 #include <QtGui>
 
 #include "ci2c_io.h"

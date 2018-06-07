@@ -1,9 +1,6 @@
 #ifndef __I2C_RGB_INTERFACE_H
 #define __I2C_RGB_INTERFACE_H
 
-#include <qwt_plot.h>
-#include <qwt_interval.h>
-#include <qwt_system_clock.h>
 #include "ui_rgbi2c.h"
 
 QT_BEGIN_NAMESPACE

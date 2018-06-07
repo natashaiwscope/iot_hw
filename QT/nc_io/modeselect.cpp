@@ -20,16 +20,6 @@
 #include <Qt/qmainwindow.h>
 #include <Qt/qapplication.h>
 #include <Qt/qmainwindow.h>
-#include <qwt_painter.h>
-#include <qwt_plot_canvas.h>
-#include <qwt_plot_marker.h>
-#include <qwt_plot_curve.h>
-#include <qwt_scale_widget.h>
-#include <qwt_legend.h>
-#include <qwt_scale_draw.h>
-#include <qwt_math.h>
-#include <qwt_plot_grid.h>
-#include <qwt_counter.h>
 #include <qaction.h>
 #include <qmenu.h>
 #include <qscrollarea.h>

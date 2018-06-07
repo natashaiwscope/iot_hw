@@ -1,9 +1,6 @@
 #ifndef __I2CPYTHON_INTERFACE_H
 #define __I2CPYTHON_INTERFACE_H
 
-#include <qwt_plot.h>
-#include <qwt_interval.h>
-#include <qwt_system_clock.h>
 #include "ui_ci2c_io.h"
 
 QT_BEGIN_NAMESPACE

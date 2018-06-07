@@ -1,9 +1,6 @@
 #ifndef __HUMIDITY_INTERFACE_H
 #define __HUMIDITY_INTERFACE_H
 
-#include <qwt_plot.h>
-#include <qwt_interval.h>
-#include <qwt_system_clock.h>
 #include "ui_humidity.h"
 
 QT_BEGIN_NAMESPACE
