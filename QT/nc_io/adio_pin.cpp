@@ -30,7 +30,7 @@ ADIO_PIN::ADIO_PIN(QWidget *parent)
     ui.led6->setStyleSheet("background: gray");
 
     QPalette pal(Qt::black);
-    pal.setColor(QPalette::WindowText, Qt::green);
+    pal.setColor(QPalette::WindowText, Qt::black);
 
     ui.select1->setEditable(false); ui.select1->addItem("INPUT"); ui.select1->addItem("ANALOGIN"); ui.select1->addItem("OUTPUT");
     ui.select2->setEditable(false); ui.select2->addItem("INPUT"); ui.select2->addItem("ANALOGIN"); ui.select2->addItem("OUTPUT");
