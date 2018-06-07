@@ -16,10 +16,10 @@
   <widget class="QLCDNumber" name="Dec_LCD1">
    <property name="geometry">
     <rect>
-     <x>500</x>
-     <y>130</y>
-     <width>181</width>
-     <height>41</height>
+     <x>470</x>
+     <y>100</y>
+     <width>271</width>
+     <height>111</height>
     </rect>
    </property>
    <property name="smallDecimalPoint">
@@ -218,8 +218,8 @@
   <widget class="QLCDNumber" name="Dec_LCD2">
    <property name="geometry">
     <rect>
-     <x>500</x>
-     <y>180</y>
+     <x>560</x>
+     <y>220</y>
      <width>181</width>
      <height>41</height>
     </rect>
@@ -237,8 +237,8 @@
   <widget class="QLCDNumber" name="Dec_LCD3">
    <property name="geometry">
     <rect>
-     <x>500</x>
-     <y>280</y>
+     <x>560</x>
+     <y>330</y>
      <width>181</width>
      <height>41</height>
     </rect>
@@ -256,8 +256,8 @@
   <widget class="QLCDNumber" name="Dec_LCD4">
    <property name="geometry">
     <rect>
-     <x>500</x>
-     <y>230</y>
+     <x>560</x>
+     <y>270</y>
      <width>181</width>
      <height>41</height>
     </rect>
@@ -275,7 +275,7 @@
   <widget class="QLabel" name="label_8">
    <property name="geometry">
     <rect>
-     <x>440</x>
+     <x>420</x>
      <y>140</y>
      <width>41</width>
      <height>16</height>
@@ -288,7 +288,7 @@
   <widget class="QLabel" name="label_9">
    <property name="geometry">
     <rect>
-     <x>440</x>
+     <x>420</x>
      <y>190</y>
      <width>41</width>
      <height>16</height>
@@ -301,7 +301,7 @@
   <widget class="QLabel" name="label_10">
    <property name="geometry">
     <rect>
-     <x>440</x>
+     <x>420</x>
      <y>290</y>
      <width>41</width>
      <height>16</height>
@@ -314,7 +314,7 @@
   <widget class="QLabel" name="label_11">
    <property name="geometry">
     <rect>
-     <x>440</x>
+     <x>420</x>
      <y>240</y>
      <width>41</width>
      <height>16</height>
@@ -327,7 +327,7 @@
   <widget class="QPushButton" name="ILED_4">
    <property name="geometry">
     <rect>
-     <x>760</x>
+     <x>810</x>
      <y>280</y>
      <width>141</width>
      <height>41</height>
@@ -343,7 +343,7 @@
   <widget class="QLabel" name="label_14">
    <property name="geometry">
     <rect>
-     <x>710</x>
+     <x>760</x>
      <y>140</y>
      <width>41</width>
      <height>16</height>
@@ -356,7 +356,7 @@
   <widget class="QPushButton" name="ILED_2">
    <property name="geometry">
     <rect>
-     <x>760</x>
+     <x>810</x>
      <y>180</y>
      <width>141</width>
      <height>41</height>
@@ -372,7 +372,7 @@
   <widget class="QLabel" name="label_15">
    <property name="geometry">
     <rect>
-     <x>710</x>
+     <x>760</x>
      <y>190</y>
      <width>41</width>
      <height>16</height>
@@ -385,7 +385,7 @@
   <widget class="QLabel" name="label_16">
    <property name="geometry">
     <rect>
-     <x>710</x>
+     <x>760</x>
      <y>290</y>
      <width>41</width>
      <height>16</height>
@@ -398,7 +398,7 @@
   <widget class="QPushButton" name="ILED_3">
    <property name="geometry">
     <rect>
-     <x>760</x>
+     <x>810</x>
      <y>230</y>
      <width>141</width>
      <height>41</height>
@@ -414,7 +414,7 @@
   <widget class="QLabel" name="label_17">
    <property name="geometry">
     <rect>
-     <x>710</x>
+     <x>760</x>
      <y>240</y>
      <width>41</width>
      <height>16</height>
@@ -427,7 +427,7 @@
   <widget class="QPushButton" name="ILED_1">
    <property name="geometry">
     <rect>
-     <x>760</x>
+     <x>810</x>
      <y>130</y>
      <width>141</width>
      <height>41</height>
@@ -444,7 +444,7 @@
    <property name="geometry">
     <rect>
      <x>470</x>
-     <y>90</y>
+     <y>60</y>
      <width>221</width>
      <height>42</height>
     </rect>
@@ -615,8 +615,8 @@
   <widget class="QLabel" name="red_label_2">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>90</y>
+     <x>30</x>
+     <y>60</y>
      <width>201</width>
      <height>42</height>
     </rect>
@@ -632,7 +632,7 @@
    <property name="geometry">
     <rect>
      <x>230</x>
-     <y>90</y>
+     <y>60</y>
      <width>221</width>
      <height>42</height>
     </rect>
@@ -648,7 +648,7 @@
    <property name="geometry">
     <rect>
      <x>710</x>
-     <y>90</y>
+     <y>60</y>
      <width>241</width>
      <height>42</height>
     </rect>
