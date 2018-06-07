@@ -166,9 +166,9 @@ private:
     QAction *d_reboot;
     QAction *d_fwupdate;
 
-    QwwLed  *connLED;
-    QwwLed  *commLED;
-    QwwLed  *fwUpgrade;
+    QLabel  *connLED;
+    QLabel  *commLED;
+    QLabel  *fwUpgrade;
     //QwwLed  *runLED;
     //QwwLed  *_led3;
     QToolBar *formatDisk;
