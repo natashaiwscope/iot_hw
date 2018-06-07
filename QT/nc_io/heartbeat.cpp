@@ -6,7 +6,6 @@
 #include <QtNetwork>
 #include <qtoolbar.h>
 #include <qcombobox.h>
-#include <qwwled.h>
 
 #include "images/connect.xpm"
 #include "images/disconnect.xpm"

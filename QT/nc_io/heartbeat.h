@@ -8,10 +8,8 @@
 #include <QTimer>
 #include <QUdpSocket>
 #include <qcombobox.h>
-#include <qwwled.h>
 
 #include "highlighter.h"
-//#include "euart_main.h"
 #include "adio_pin.h"
 #include "ci2c_io.h"
 #include "rgbi2c.h"
