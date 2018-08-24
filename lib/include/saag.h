@@ -54,10 +54,10 @@ typedef enum
 
 typedef enum
 {
-    I2C_OK       = 0x00,
-    I2C_ERROR,
-    I2C_BUSY,
-    I2C_TIMEOUT1
+    EI2C_OK       = 0x00,
+    EI2C_ERROR,
+    EI2C_BUSY,
+    EI2C_TIMEOUT1
 } I2C_StatusTypeDef;
 
 
