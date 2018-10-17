@@ -83,6 +83,24 @@ enum
     __IW_Nosig = 0x80
 };
 
+typedef union BroadCastData
+{
+    struct
+    {
+        char          prodName[16];
+        char          userName[256];
+        char          hostName[256];
+        short         verHigh;
+        short         verLow;
+        short         bldNum;
+        unsigned char csum;
+        unsigned char isum;
+    };
+    char rawbuff[536];//512+24
+} __attribute__((__packed__)) BroadCastData;
+
+
+
 #define SML_PKT_SIZE 32
 #define MED_PKT_SIZE 64
 #define BIG_PKT_SIZE 1280
